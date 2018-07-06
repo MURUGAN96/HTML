@@ -1,0 +1,136 @@
+<html>
+   <head>
+      <title>Form filling</title>
+      <style>
+         .fields{float:right;margin-right:15px;margin-top:5px; word-wrap: break-word;font-size: 14px }
+         .value{padding:7px;opacity: 0.5;}
+         #submit{background-color: #333333; color:white;width: 180px; padding: 15px;font-size: 20px;}
+         #fname{width: 300px}
+         #mname{width: 300px}
+         #Lname{width: 300px}
+         #mobile{width: 300px}
+         #phone{width: 300px}
+         #idnumber{width: 80%}
+         #issue{width: 80%}
+         #time{width: 80%}
+         #idtype{width: 80%}
+         #marital{width: 300px}
+         #smoke{width:25px}
+         #smokes{width: 20px}
+         #student{width: 25px}
+         #student1{width: 20px}
+         #pension{width:25px}
+         #pension1{width: 20px}
+         tr{
+         margin-top: 30px;
+         }
+      </style>
+   </head>
+   <body style="background-color: #f0f5f5;font-family: Verdana, Geneva, sans-serif">
+      <p style="opacity: 0.7;font-size: 24px; margin-left: 50px"><img src="manicon.JPG" alt="man icon" style="width: 40px;margin-bottom: -15"></img>Personal Details</p>
+      <hr width="100%" style="opacity: 0.5;margin-top:-10px;">
+      <form>
+         <table  cellspacing="20" style="align-content: center">
+            <tr>
+               <td class="fields">Title</td>
+               <td>
+                  <select id="title" class="value" >
+                     <option>Please select...</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td class="fields">First Name</td>
+               <td><input id="fname" class="value" type="text" /></td>
+            </tr>
+            <tr>
+               <td class="fields">Middle Name</td>
+               <td>
+                  <input id="mname" class="value" type="text"  placeholder="(optional)" />
+               </td>
+            </tr>
+            <tr>
+               <td class="fields" >Last Name</td>
+               <td><input id="Lname"  class="value" type="text"></td>
+            </tr>
+            <tr>
+               <td class="fields">Date of Birth</td>
+               <td ><input class="value"  type="date"  style="
+                  text-transform:  uppercase;"></td>
+            </tr>
+            <tr>
+               <td class="fields">Gender</td>
+               <td><input  id="gender" class="value" type="radio" name="gender">Male<input class="value" type="radio" name="gender">Female</td>
+            </tr>
+            <tr>
+               <td class="fields">Marital status</td>
+               <td>
+                  <select id="marital" class="value">
+                     <option>Please select...</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td class="fields">Mobile Phone</td>
+               <td><input id="mobile" class="value" type="text"></td>
+            </tr>
+            <tr>
+               <td class="fields">Home/Work Phone</td>
+               <td><input id="phone" class="value" type="text" placeholder="(optional,inc area code)"></td>
+            </tr>
+            <tr>
+               <td class="fields">Do you have a preferred time to be called?</td>
+               <td>
+                  <select id="time" class="value">
+                     <option>Please select...</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td class="fields">Identification Type</td>
+               <td><input id="idtype" class="value" type="text" placeholder="Please Selet..."></td>
+            </tr>
+            <tr>
+               <td class="fields">Id Number</td>
+               <td><input id="idnumber" class="value" type="text"></td>
+            </tr>
+            <tr>
+               <td class="fields">State of issue</td>
+               <td>
+                  <select id="issue" class="value">
+                     <option>Please select...</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td class="fields">Expiry Date</td>
+               <td ><input class="value" type="date"  style="
+                  text-transform:  uppercase;"></td>
+            </tr>
+            <tr>
+               <td class="fields" >Are you a smoke?</td>
+               <td><input id="smokes" class="value" type="radio" name="smoke">Yes<input id="smoke"  class="value" type="radio" name="smoke">No</td>
+            </tr>
+            <tr>
+               <td class="fields">Are you a student?</td>
+               <td><input id="student" class="value" type="radio" name="smoke">Yes<input id="student1"  class="value" type="radio" name="smoke">No</td>
+            </tr>
+            <tr>
+               <td class="fields">Do you currently receive a pension?</td>
+               <td><input id="pension" class="value" type="radio" name="smoke">Yes<input id="pension1"  class="value" type="radio" name="smoke">No</td>
+            </tr>
+            <tr>
+               <td class="fields">Address</td>
+               <td><textarea style="
+                  width: 300;
+                  height: 80px;
+                  "></textarea></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>  <input id="submit" type="submit" value="Submit Form"></td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>
